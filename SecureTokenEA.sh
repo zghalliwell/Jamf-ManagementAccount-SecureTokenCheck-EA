@@ -1,18 +1,18 @@
 #!/bin/bash
 
-#############################################################
+#################################################################
 #	This extension attribute for Jamf Pro will reach out	#
-#	to Jamf via the API, find the username of the			#
+#	to Jamf via the API, find the username of the		#
 #	management account on the machine and then check on 	#
-#	the Secure Token status of the management account		#
-#	and report it back to Jamf Pro.							#
-#															#
-#	This script utilizes 256-bit encryption to protect		#
-#	the API username and password. To generate an			#
-#	encrypted string, salt and password you can use my		#
-#	Mr Encryptor tool here: 								#
-#	https://github.com/zghalliwell/MrEncryptor				#
-#############################################################
+#	the Secure Token status of the management account	#
+#	and report it back to Jamf Pro.				#
+#								#
+#	This script utilizes 256-bit encryption to protect	#
+#	the API username and password. To generate an		#
+#	encrypted string, salt and password you can use my	#
+#	Mr Encryptor tool here: 				#
+#	https://github.com/zghalliwell/MrEncryptor		#
+#################################################################
 
 #Establish the function to decrypt the username and password of the API account
 function DecryptString() {
