@@ -7,8 +7,8 @@
 #	the Secure Token status of the management account	#
 #	and report it back to Jamf Pro.				#
 #								#
-#	This script utilizes 256-bit encryption to protect	#
-#	the API username and password. To generate an		#
+#	This script encrypts the API username and pass to 	#
+#	protect company info. To generate an			#
 #	encrypted string, salt and password you can use my	#
 #	Mr Encryptor tool here: 				#
 #	https://github.com/zghalliwell/MrEncryptor		#
